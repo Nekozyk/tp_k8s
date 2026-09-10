@@ -1,0 +1,12 @@
+# Squelette volontairement incomplet — Partie 2 du TP
+apiVersion: v1
+kind: Service
+metadata:
+  name: microshop
+spec:
+  type: ???            # ClusterIP ou NodePort selon l'environnement fourni
+  selector:
+    app: ???            # doit correspondre au label du Deployment
+  ports:
+    - port: ???
+      targetPort: ???

@@ -1,0 +1,22 @@
+# Squelette volontairement incomplet — Partie 2 du TP
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microshop
+spec:
+  replicas: ???
+  selector:
+    matchLabels:
+      app: ???
+  template:
+    metadata:
+      labels:
+        app: ???
+    spec:
+      imagePullSecrets:
+        - name: ???        # secret d'authentification au registre GitLab, à créer
+      containers:
+        - name: microshop
+          image: ???        # image du registre privé GitLab, tag SHA
+          ports:
+            - containerPort: ???
